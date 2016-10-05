@@ -25,9 +25,8 @@ public class arrayToString {
 				}
 		}
 		System.out.println(result);
-		
-
 	}
+	
 	public static int[][] deleting(int[][] table){
 		int height = tabla.length;
 		int length = tabla[0].length;
@@ -40,25 +39,26 @@ public class arrayToString {
 		
 		return answer;
 	}
+	
 	public static String copy(int[][] table){
-		int height = tabla.length;
-		int length = tabla[0].length;
+		int height = table.length;
+		int length = table[0].length;
 		String answer= "";
 		//first row
 		for(int i =0; i<length;i++){
-			answer = answer + " " + table[0][i];
+			answer += " " + table[0][i];
 		}
 		//last column
 		for(int i = 1; i<height; i++){
-			answer = answer + " " + table[i][length-1];
+			answer += " " + table[i][length-1];
 		}
 		//last row
 		for(int i=1; i<length;i++){
-			answer = answer + " " + table[height-1][length-1-i];
+			answer += " " + table[height-1][length-1-i];
 		}
 		//first column
 		for(int i= 1; i<height-1;i++){
-			answer = answer + " " + table[height-1-i][0];
+			answer += " " + table[height-1-i][0];
 		}
 		return answer;
 		
