@@ -1,5 +1,5 @@
 package arrayToString;
-//This program converts an array into a string in a spiral order. 
+//This program converts an array into a string in a spiral order.
 // Az alábbi program az input téglalap alakú tömb
 // elemeit csigavonalban sorbarendezve egy String-be (eredmény) írja át.
 public class arrayToString {
@@ -28,8 +28,8 @@ public class arrayToString {
 	}
 	
 	public static int[][] deleting(int[][] table){
-		int height = tabla.length;
-		int length = tabla[0].length;
+		int height = table.length;
+		int length = table[0].length;
 		int[][] answer = new int[height-2][length-2];
 		for(int i=0; i<heihjt-2; i++){
 			for(int j=0; j<length-2;j++){
